@@ -5,9 +5,11 @@
             for promo in promotionals
                 li.promo
                         div
+                            h1= promo.band
                             div(style='background-image: url(#{"/images/albums/" + promo.url})').img
-                            p= promo.band
-                            hr
-                            p= promo.title
+                            br
+                            h2= promo.title
+                            br
+                        p.description= promo.description
         else
             p No news so far!

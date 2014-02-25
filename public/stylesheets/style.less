@@ -96,6 +96,8 @@ section {
 @album-background: @header;
 @album-background-hover: @paragraph;
 @album-image-border-color: #5f5f5f;
+@album-font-color: orange;
+@album-font-hover-color: white;
 @promo-size: 300px;
 @promo-width: @promo-size;
 @promo-height: @promo-size;
@@ -335,12 +337,12 @@ footer {
     }
 
     .album > div > p {
-        color: orange;
+        color: @album-font-color;
         font-weight: bold;
     }
 
     .album > div:hover > p {
-        color: white;
+        color: @album-font-hover-color;
     }
 
     .album > div > hr {
@@ -404,10 +406,10 @@ footer {
     max-width: @promo-width;
     height: @promo-height;
     min-height: @promo-height;
-    margin: 0 20px 70px 20px;
 }
 
-    .promo > div {
+    .promo > .description {
+        margin-bottom: 20px;
     }
 
         .promo > div:hover {
@@ -432,14 +434,22 @@ footer {
         opacity: 1.0;
     }
 
-    .promo > div > p {
-        color: orange;
-        font-weight: bold;
-        font-size: large;
+    .promo > div > h1 {
+        font-size: x-large;
+        color: @album-font-color;
     }
 
-    .promo > div:hover > p {
-        color: white;
+    .promo > div:hover > h1 {
+        color: @album-font-hover-color;
+    }
+
+    .promo > div > h2 {
+        font-size: large;
+        color: @album-font-color;
+    }
+
+    .promo > div:hover > h2 {
+        color: @album-font-hover-color;
     }
 
     .promo > div > hr {

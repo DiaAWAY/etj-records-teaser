@@ -261,11 +261,11 @@ footer p {
   opacity: 1.0;
 }
 .album > div > p {
-  color: orange;
+  color: #ffa500;
   font-weight: bold;
 }
 .album > div:hover > p {
-  color: white;
+  color: #ffffff;
 }
 .album > div > hr {
   margin: 2px;
@@ -316,7 +316,9 @@ footer p {
   max-width: 300px;
   height: 300px;
   min-height: 300px;
-  margin: 0 20px 70px 20px;
+}
+.promo > .description {
+  margin-bottom: 20px;
 }
 .promo > div:hover {
   cursor: pointer;
@@ -337,13 +339,19 @@ footer p {
 .promo:hover .img {
   opacity: 1.0;
 }
-.promo > div > p {
-  color: orange;
-  font-weight: bold;
-  font-size: large;
+.promo > div > h1 {
+  font-size: x-large;
+  color: #ffa500;
 }
-.promo > div:hover > p {
-  color: white;
+.promo > div:hover > h1 {
+  color: #ffffff;
+}
+.promo > div > h2 {
+  font-size: large;
+  color: #ffa500;
+}
+.promo > div:hover > h2 {
+  color: #ffffff;
 }
 .promo > div > hr {
   margin: 2px auto;
