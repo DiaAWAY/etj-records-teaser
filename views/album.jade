@@ -1,0 +1,11 @@
+block content
+    #albums
+        ul
+            if albums && albums.length > 0
+                for album in albums
+                    li#album
+                        div
+                            img(src='/images/albums/' + album.url)
+                            p= album.band
+                            hr
+                            p= album.title
