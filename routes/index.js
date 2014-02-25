@@ -23,7 +23,7 @@ var promotionals = [
 ];
 
 exports.index = function (req, res) {
-    res.render('index', { title: 'Eine Tasse Jäger Records TESTPAGE NOT ACTUAL PRODUCTS', albums: albums, promotionals: promotionals });
+    res.render('index', { title: 'TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE TESTPAGE', albums: albums, promotionals: promotionals });
 };
 
 exports.about = function (req, res) {
