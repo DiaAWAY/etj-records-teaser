@@ -1,0 +1,13 @@
+﻿h1 NEWS
+#promotionals
+    ul
+        if promotionals && promotionals.length > 0
+            for promo in promotionals
+                li.promo
+                        div
+                            div(style='background-image: url(#{"/images/albums/" + promo.url})').img
+                            p= promo.band
+                            hr
+                            p= promo.title
+        else
+            p No news so far!

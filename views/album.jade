@@ -1,11 +1,13 @@
-﻿block content
-    #albums
-        ul
-            if albums && albums.length > 0
-                for album in albums
-                    li#album
-                        div
-                            img(src='/images/albums/' + album.url)
-                            p= album.band
-                            hr
-                            p= album.title
+﻿H1 ALBUMS
+#albums
+    ul
+        if albums && albums.length > 0
+            for album in albums
+                li.album
+                    div
+                        div(style='background-image: url(#{"/images/albums/" + album.url})').img
+                        p= album.band
+                        hr
+                        p= album.title
+        else
+            p No Albums so far!

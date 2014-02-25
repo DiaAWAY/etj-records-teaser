@@ -8,7 +8,7 @@ function Album(band, title, url) {
     this.url = url;
 }
 
-// Dummy users
+// Dummy albums
 var albums = [
     new Album('Container 90', 'Working Class League', 'container90_WorkingClassLeague.jpg'),
     new Album('Container 90', 'World Champion Shit', 'container90_WorldChampionShit.jpg'),
@@ -17,8 +17,12 @@ var albums = [
     new Album( 'Spark!', 'Hela Din Värld', 'spark_HelaDinVarld.jpg')
 ];
 
+var promotionals = [
+    new Album( 'White Trash Wankers', 'Album Title', 'WTW-Poster_small.jpg')
+];
+
 exports.index = function (req, res) {
-    res.render('index', { title: 'Eine Tasse Jäger Records TESTPAGE NOT ACTUAL PRODUCTS', albums: albums });
+    res.render('index', { title: 'Eine Tasse Jäger Records TESTPAGE NOT ACTUAL PRODUCTS', albums: albums, promotionals: promotionals });
 };
 
 exports.about = function (req, res) {

@@ -96,6 +96,13 @@ section {
 @album-background: @header;
 @album-background-hover: @paragraph;
 @album-image-border-color: #5f5f5f;
+@promo-size: 300px;
+@promo-width: @promo-size;
+@promo-height: @promo-size;
+@promo-image-size: 300px;
+@promo-background: @header;
+@promo-background-hover: @paragraph;
+@promo-image-border-color: #5f5f5f;
 @menu-background: #222;
 
 /*#endregion */
@@ -106,7 +113,7 @@ section {
     width: 80%;
     padding: 20px;
     margin-top: 1px;
-    max-width: 570px;
+    max-width: 580px;
     min-height: 20px;
     text-align: left;
     margin-left: auto;
@@ -138,6 +145,11 @@ h1 {
 h2 {
     color: @header;
     font-size: medium;
+}
+
+h3 {
+    color: @header;
+    font-size: small;
 }
 
 /*#endregion */
@@ -257,73 +269,91 @@ footer {
 
 /*#region Albums */
 
+#album-positioner-left {
+    position: relative;
+    left: -50%;
+    text-align: left;
+}
+
+#album-positioner-right {
+    position: relative;
+    left: 50%;
+}
+
 #albums {
-    width: auto;
-    margin: 20px;
+    width: 100%;
+    margin: 20px auto;
     min-height: 20px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
     #albums ul {
+        list-style: none;
+        display: table;
         overflow: hidden;
+        width: 100%;
     }
 
-    #albums li {
-        list-style-type: none;
-        float: left;
-        display: inline-block;
-    }
+        #albums ul li {
+            display: table-cell;
+            text-align: center;
+            float: left;
+        }
 
-#album {
+.album {
     width: @album-width;
     min-width: @album-width;
     max-width: @album-width;
     height: @album-height;
     min-height: @album-height;
-    margin: 20px;
-    margin-bottom: 70px;
+    margin: 0 20px 70px 20px;
 }
 
-    #album img {
+    .album > div {
+    }
+
+        .album > div:hover {
+            cursor: pointer;
+        }
+
+    .album .img {
         width: @album-image-size;
         height: @album-image-size;
         border: thick solid @album-image-border-color;
         border-radius: 3px;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         opacity: 0.9;
     }
 
-    #album:hover img {
+    .album:hover .img {
         opacity: 1.0;
     }
 
-    #album > div {
-        padding: 10px;
+    .album > div > p {
+        color: orange;
+        font-weight: bold;
     }
 
-        #album > div:hover {
-            cursor: pointer;
-        }
+    .album > div:hover > p {
+        color: white;
+    }
 
-        #album > div > p {
-            color: orange;
-            font-weight: bold;
-        }
+    .album > div > hr {
+        margin: 2px;
+        border: 1px solid @album-background;
+        width: @album-image-size;
+    }
 
-        #album > div:hover > p {
-            color: white;
-        }
-
-        #album > div > hr {
-            margin: 2px;
-            border: 1px solid @album-background;
-        }
-
-        #album > div:hover > hr {
-            margin: 2px;
-            border: 1px solid @album-background-hover;
-        }
+    .album > div:hover > hr {
+        margin: 2px;
+        border: 1px solid @album-background-hover;
+        width: @album-image-size;
+    }
 
 #double li {
     width: 50%;
@@ -340,5 +370,88 @@ footer {
 #six li {
     width: 16.666%;
 }
+
+/*#endregion */
+
+/*#region Promotionals */
+
+#promotionals {
+    width: auto;
+    min-height: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    #promotionals ul {
+        list-style-type: none;
+        overflow: hidden;
+        display: table;
+        width: 100%;
+    }
+
+        #promotionals ul li {
+            display: table-cell;
+            text-align: center;
+        }
+
+            #promotionals ul li div {
+                margin: 0 auto;
+            }
+
+.promo {
+    width: @promo-width;
+    min-width: @promo-width;
+    max-width: @promo-width;
+    height: @promo-height;
+    min-height: @promo-height;
+    margin: 0 20px 70px 20px;
+}
+
+    .promo > div {
+    }
+
+        .promo > div:hover {
+            cursor: pointer;
+        }
+
+    .promo .img {
+        width: @promo-image-size;
+        height: @promo-image-size;
+        border: thick solid @promo-image-border-color;
+        border-radius: 3px;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.9;
+    }
+
+    .promo:hover .img {
+        opacity: 1.0;
+    }
+
+    .promo > div > p {
+        color: orange;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .promo > div:hover > p {
+        color: white;
+    }
+
+    .promo > div > hr {
+        margin: 2px auto;
+        border: 1px solid @promo-background;
+        width: @promo-image-size;
+    }
+
+    .promo > div:hover > hr {
+        margin: 2px auto;
+        border: 1px solid @promo-background-hover;
+        width: @promo-image-size;
+    }
 
 /*#endregion */
