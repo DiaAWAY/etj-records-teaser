@@ -271,12 +271,16 @@ header .wtf > div {
 /*#region Footer */
 
 footer {
-    width: 100%;
-    padding: 20px;
+    width: 80%;
+    padding: 20px @site-padding 25px @site-padding;
+    max-width: @site-width;
     min-height: 20px;
-    max-width: 960px;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
+}
+
+footer > div {
     text-align: center;
 }
 

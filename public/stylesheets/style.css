@@ -207,12 +207,15 @@ header .wtf {
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 footer {
-  width: 100%;
-  padding: 20px;
+  width: 80%;
+  padding: 20px 100px 25px 100px;
+  max-width: 600px;
   min-height: 20px;
-  max-width: 960px;
+  text-align: left;
   margin-left: auto;
   margin-right: auto;
+}
+footer > div {
   text-align: center;
 }
 footer p {
