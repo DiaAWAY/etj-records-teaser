@@ -5,20 +5,11 @@ html(data-ng-app='')
         title= title
         link(rel='stylesheet', href='/stylesheets/style.min.css')
     body
-        section
-            include paypal
-        div#logo
-            img(src='/images/etj-logo.png')
         header
-            nav
-                ul
-                    li
-                        a(href="/") Home
-                    li
-                        a(href="/about") About
-                    li
-                        a(href="/contact") Contact
-        block shop
+            div.wtf
+            div#logo
+                img(src='/images/ETJ-Records-Splatter-Logo-orange.png')
+            div.wtf
         block scripts
             script(type='text/javascript', src='/javascript/album.js')
             script(type='text/javascript', src='/javascript/angular-1.2.10/angular.min.js')
@@ -26,4 +17,5 @@ html(data-ng-app='')
     section#wrapper
         block content
     footer
-        p site design © 2014 sindre røbekk hagerup / logo © 2014 etj-records rev 2014.02.25-02
+        p site design by sindre røbekk hagerup / logo design by peter richter
+        p © 2014 etj-records rev 2014.03.03-03

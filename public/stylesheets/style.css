@@ -84,19 +84,19 @@ section {
 /*# sourceMappingURL=style.css.map */
 #wrapper {
   width: 80%;
-  padding: 20px;
-  margin-top: 1px;
-  max-width: 580px;
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 600px;
   min-height: 20px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  background: rgba(125, 125, 125, 0.3);
+  background: #333333;
   border: 1px solid #333333;
 }
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: #333333;
+  background: #282828;
 }
 a {
   color: #a5a5a5;
@@ -127,8 +127,7 @@ h3 {
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 header {
-  background: #222222;
-  box-shadow: 0 0 3px #000;
+  background: #282828;
 }
 header nav {
   width: 100%;
@@ -157,6 +156,21 @@ header nav ul li a {
 header nav ul li a:hover {
   color: white;
 }
+header .wtf {
+  background-color: #1d1b1c;
+  width: 80%;
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 600px;
+  min-height: 15px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: #1d1b1c;
+}
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 #paypal {
@@ -174,11 +188,19 @@ header nav ul li a:hover {
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 #logo {
+  background-color: #333333;
+  width: 80%;
+  padding-left: 100px;
+  padding-right: 100px;
+  max-width: 600px;
+  min-height: 20px;
   text-align: center;
-  padding: 10px 0 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #333333;
 }
 #logo > img {
-  max-width: 570px;
+  max-width: 300px;
   width: 100%;
   height: auto;
 }
@@ -186,7 +208,10 @@ header nav ul li a:hover {
 /*# sourceMappingURL=style.css.map */
 footer {
   width: 100%;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
   min-height: 20px;
   max-width: 960px;
   margin-left: auto;
@@ -296,6 +321,20 @@ footer p {
   min-height: 20px;
   text-align: center;
   margin: 0 auto;
+}
+#promotionals .promo-text {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+  font-size: 90%;
+  color: white;
+  border-bottom: 10px;
+  margin-bottom: 10px;
+}
+#promotionals .promo-text > a {
+  color: #ff5500;
+  text-decoration: none;
+}
+#promotionals img {
+  width: 100%;
 }
 #promotionals ul {
   list-style-type: none;

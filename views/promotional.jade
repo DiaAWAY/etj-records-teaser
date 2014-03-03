@@ -1,15 +1,16 @@
-﻿h1 NEWS
-#promotionals
-    ul
-        if promotionals && promotionals.length > 0
-            for promo in promotionals
-                li.promo
-                        div
-                            h1= promo.band
-                            div(style='background-image: url(#{"/images/albums/" + promo.url})').img
-                            br
-                            h2= promo.title
-                            br
-                        p.description= promo.description
-        else
-            p No news so far!
+﻿#promotionals
+    p.promo-text.
+        Watch out! White Trash Wankers are rolling in to town to deliver a bad-ass
+        album this <a href="https://www.youtube.com/watch?v=MHWpGzdaMe0">summer</a>, dedicated to all the <a href="https://www.youtube.com/watch?v=qjy2Ac4zGbA">maniacs</a> and <a href="https://www.youtube.com/watch?v=umhHefFQ7Kw">red light queens</a> out there.
+    p.promo-text.
+        White Trash Wankers are mixing EBM, psychobilly and a proper No School attitude!
+        Brought to you by a collaboration between Christoph El Weisio (A.D.A.C 8286)
+        and Peter Richter (Stechschritt). <a href=""></a>
+    br
+    img(src="/images/albums/WTW-Poster_medium.jpg")
+    br
+    br
+    p.promo-text.
+        The gears are grinding. Jäger is flowing. Bodies are being smeared. 
+    p.promo-text.
+        Eine Tasse Jäger Records complete web page will go live on 1. May, 2014.

@@ -84,8 +84,8 @@ section {
 
 /*#region Variables */
 
-@background: #333;
-@wrapper-background: rgba(125,125,125,0.3);
+@background: #282828;
+@wrapper-background: #333;
 @link: #a5a5a5;
 @header: #a5a5a5;
 @paragraph: #c5c5c5;
@@ -106,6 +106,10 @@ section {
 @promo-background-hover: @paragraph;
 @promo-image-border-color: #5f5f5f;
 @menu-background: #222;
+@dustefarge: #1D1B1C;
+
+@site-width: 600px;
+@site-padding: 100px;
 
 /*#endregion */
 
@@ -113,9 +117,9 @@ section {
 
 #wrapper {
     width: 80%;
-    padding: 20px;
-    margin-top: 1px;
-    max-width: 580px;
+    padding-left: @site-padding;
+    padding-right: @site-padding;
+    max-width: @site-width;
     min-height: 20px;
     text-align: left;
     margin-left: auto;
@@ -168,8 +172,7 @@ h3 {
 /*#region Header */
 
 header {
-    background: @menu-background;
-    box-shadow: 0 0 3px #000;
+    background: @background;
 }
 
     header nav {
@@ -203,6 +206,25 @@ header {
                     header nav ul li a:hover {
                         color: white;
                     }
+header .wtf {
+    background-color: @dustefarge;
+    width: 80%;
+    padding-left: @site-padding;
+    padding-right: @site-padding;
+    max-width: @site-width;
+    min-height: 15px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: @dustefarge;
+
+}
+
+header .wtf > div {
+}
 /*#endregion */
 
 /*#region Paypal */
@@ -226,12 +248,20 @@ header {
 /*#region Logo */
 
 #logo {
+    background-color: @wrapper-background;
+    width: 80%;
+    padding-left: @site-padding;
+    padding-right: @site-padding;
+    max-width: @site-width;
+    min-height: 20px;
     text-align: center;
-    padding: 10px 0 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #333333;
 }
 
     #logo > img {
-        max-width: 570px;
+        max-width: 300px;
         width: 100%;
         height: auto;
     }
@@ -242,7 +272,10 @@ header {
 
 footer {
     width: 100%;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: @site-padding;
+    padding-right: @site-padding;
     min-height: 20px;
     max-width: 960px;
     margin-left: auto;
@@ -383,6 +416,23 @@ footer {
     text-align: center;
     margin: 0 auto;
 }
+
+    #promotionals .promo-text {
+        font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+        font-size: 90%;
+        color: white;
+        border-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    #promotionals .promo-text > a {
+        color: rgba(255 ,85, 0, 1.0);
+        text-decoration: none;
+    }
+
+    #promotionals img {
+        width: 100%;
+    }
 
     #promotionals ul {
         list-style-type: none;
