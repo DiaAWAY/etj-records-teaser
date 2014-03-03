@@ -13,7 +13,7 @@
     <ProjectGuid>83aac9f6-1094-40fc-8ce9-2ca0fe8ccbac</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>etj-records-teaser.js</StartupFile>
+    <StartupFile>etj-records.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,7 +30,7 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="etj-records-teaser.js" />
+    <Compile Include="etj-records.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\user.js" />
     <Content Include="package.json" />
