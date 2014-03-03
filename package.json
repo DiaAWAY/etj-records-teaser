@@ -2,7 +2,7 @@
   "name": "etj_records_teaser",
   "version": "0.0.0",
   "description": "etj-records-teaser",
-  "main": "etj-records-teaser.js",
+  "main": "etj-records.js",
   "author": {
     "name": "DiaAWAY",
     "email": ""
