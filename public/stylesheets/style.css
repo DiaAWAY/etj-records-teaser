@@ -208,10 +208,7 @@ header .wtf {
 /*# sourceMappingURL=style.css.map */
 footer {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 20px;
   min-height: 20px;
   max-width: 960px;
   margin-left: auto;
